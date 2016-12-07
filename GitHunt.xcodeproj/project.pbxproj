@@ -13,6 +13,9 @@
 		D7BA070F1DF5513D005E11E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7BA070D1DF5513D005E11E9 /* Main.storyboard */; };
 		D7BA07111DF5513D005E11E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7BA07101DF5513D005E11E9 /* Assets.xcassets */; };
 		D7BA07141DF5513D005E11E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7BA07121DF5513D005E11E9 /* LaunchScreen.storyboard */; };
+		D7BA071D1DF5526E005E11E9 /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BA071C1DF5526E005E11E9 /* GithubAPI.swift */; };
+		D7BA07201DF555A6005E11E9 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BA071F1DF555A6005E11E9 /* Repo.swift */; };
+		D7BA07221DF56A3E005E11E9 /* QueryListRepos.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BA07211DF56A3E005E11E9 /* QueryListRepos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		D7BA07101DF5513D005E11E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7BA07131DF5513D005E11E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7BA07151DF5513D005E11E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7BA071C1DF5526E005E11E9 /* GithubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubAPI.swift; sourceTree = "<group>"; };
+		D7BA071F1DF555A6005E11E9 /* Repo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		D7BA07211DF56A3E005E11E9 /* QueryListRepos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryListRepos.swift; sourceTree = "<group>"; };
 		DB1003620D2A3905918DE0CD /* Pods-GitHunt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHunt.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitHunt/Pods-GitHunt.release.xcconfig"; sourceTree = "<group>"; };
 		E20723F8926C4E30F72DF971 /* Pods-GitHunt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHunt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GitHunt/Pods-GitHunt.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,6 +75,8 @@
 		D7BA07081DF5513D005E11E9 /* GitHunt */ = {
 			isa = PBXGroup;
 			children = (
+				D7BA071E1DF55585005E11E9 /* Models */,
+				D7BA071B1DF55258005E11E9 /* Networking */,
 				D7BA07091DF5513D005E11E9 /* AppDelegate.swift */,
 				D7BA070B1DF5513D005E11E9 /* ViewController.swift */,
 				D7BA070D1DF5513D005E11E9 /* Main.storyboard */,
@@ -77,6 +85,23 @@
 				D7BA07151DF5513D005E11E9 /* Info.plist */,
 			);
 			path = GitHunt;
+			sourceTree = "<group>";
+		};
+		D7BA071B1DF55258005E11E9 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D7BA071C1DF5526E005E11E9 /* GithubAPI.swift */,
+				D7BA07211DF56A3E005E11E9 /* QueryListRepos.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		D7BA071E1DF55585005E11E9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D7BA071F1DF555A6005E11E9 /* Repo.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		F28F15C54A5671E87C3A4D96 /* Pods */ = {
@@ -213,7 +238,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7BA070C1DF5513D005E11E9 /* ViewController.swift in Sources */,
+				D7BA071D1DF5526E005E11E9 /* GithubAPI.swift in Sources */,
+				D7BA07221DF56A3E005E11E9 /* QueryListRepos.swift in Sources */,
 				D7BA070A1DF5513D005E11E9 /* AppDelegate.swift in Sources */,
+				D7BA07201DF555A6005E11E9 /* Repo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +407,7 @@
 				D7BA071A1DF5513D005E11E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

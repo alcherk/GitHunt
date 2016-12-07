@@ -7,5 +7,7 @@ target 'GitHunt' do
 
   # Pods for GitHunt
   pod 'Alamofire', '~> 4.0'
+  pod 'ObjectMapper', '~> 2.2'
+  #pod 'ReactKit', :git=> 'git@github.com:ReactKit/ReactKit.git', :branch => 'swift/3.0'
 
 end
